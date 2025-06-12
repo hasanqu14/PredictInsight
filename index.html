@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PredictInsight – Real-time Object Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PredictInsight – Real-time Object Detection</h1>
+  <video id="webcam" autoplay muted playsinline width="640" height="480"></video>
+  <canvas id="canvas" width="640" height="480"></canvas>
+<div id="label-counter" style="margin-top: 10px; font-size: 18px; font-family: sans-serif;"></div>
+
+  <!-- TensorFlow.js and COCO-SSD model -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src="script.js"></script>
+</body>
+</html>
